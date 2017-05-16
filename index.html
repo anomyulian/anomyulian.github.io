@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Murdoc and The Gank</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.2.0.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css" media="screen">
+  	body {
+  		background-color: #fff;
+  		font-family: Montserrat, sans-serif;
+  		line-height: 1.8;
+  		color: #000;
+
+  		
+  	}
+  	p{
+  		font-family: Montserrat, sans-serif;
+  		font-size: 18px !important;
+  	}
+	  .navbar {
+	    margin-bottom: 0;
+	    background-color: #000000;
+	    z-index: 9999;
+	    border: 0;
+	    font-size: 12px !important;
+	    line-height: 1.42857143 !important;
+	    letter-spacing: 4px;
+	    border-radius: 0;
+	    font-family: Montserrat, sans-serif;
+		}
+		.navbar li a, .navbar .navbar-brand {
+	    color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+	    color: #000000 !important;
+	    background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+	    border-color: transparent;
+	    color: #fff !important;
+		}
+		.padding-30{
+			padding-bottom: 30px;
+		}
+  	.jumbotron{
+  		letter-spacing: 4px;
+  		background-color: #000000; /*black*/
+  		color: #ffffff;
+  		padding: 75px 25px;
+  		font-family: Montserrat, sans-serif;
+  	}
+
+  	.about{
+  		outline: 1px solid black;
+  		padding: 30px;
+  	}
+
+  	.container-fluid{
+  		padding:60px 50px;
+  	}
+
+  	.bg-1{
+  		background-color: #000;
+  		color: #fff;
+  	}
+
+  	.bg-2{
+  		background-color: #0b7844;
+  		color: #fff;
+  		font-size: 12px !important;
+	    line-height: 1.42857143 !important;
+	    letter-spacing: 4px;
+	    font-family: Montserrat, sans-serif;
+  	}
+		.logo-small{
+  		color: #ccc;
+  		font-size: 20px;
+  	}
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<script>
+	$(document).ready(function(){
+	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+	  if (this.hash !== "") {
+	    event.preventDefault();
+	    var hash = this.hash;
+	    $('html, body').animate({
+	      scrollTop: $(hash).offset().top
+	    }, 900, function(){
+	      window.location.hash = hash;
+	      });
+	    }
+	  });
+	})
+</script>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Gorillaz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#characters">CHARACTERS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div id="about" class="container-fluid">
+<div id="characters" class="container-fluid">
+<div id="backstory" class="container-fluid">
+<div id="discography" class="container-fluid"> -->
+
+<div class="jumbotron text-center">
+	<img src="gorillaz.jpg" alt="Gorillaz">
+	<h3>"You were born an original, don't die a copy"</h3>
+	<h4>- Murdoc -</h4>
+</div>
+
+<div id="about">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6 text-center">
+			<img src="gorillaz-group.jpg" alt="Gorillaz">
+		</div>
+		<div class="col-sm-6 about">
+			<h2 class="text-right padding-30 ">ABOUT</h2>
+			<p>The band was created by Damon Albarn from the Britpop band Blur, and Jamie Hewlett, the co-creator of the comic book Tank Girl. Their style is reminiscent of 80's dance music with strong influences from hip-hop, dub, electro, and pop. Unlike other fictional bands whose music has had real-life success, they are neither a parody of a particular genre (Spinal Tap, A Mighty Wind) nor marketed to young children (The Archies), and their actual musical output is far more of an attraction to most of their fans than their existence as cartoon characters. </p>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid" id="characters">
+	<h2 class="text-center" class="padding-30">CHARACTERS</h2>
+	<br>
+	<div class="row">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-10">
+					<div class="row about">
+							<div class="col-sm-5">
+									<img src="img/2d-framed.jpg" alt="2D">
+							</div>
+							<div class="col-sm-7">
+								<p><strong>Name:</strong></p> 
+								<p>2D</p>
+
+								<p><strong>Date of Birth:</strong></p>
+								<p>May 23, 1978</p>
+
+								<p><strong>Place of Birth:</strong></p>
+								<p>Crawley, England</p>
+
+								<p><strong>Height:</strong></p>
+								<p>6' 2''</p>
+
+								<p><strong>Quote:</strong></p>
+								<p>"Rock'n roll is like space, right? It's infinite, innit, so you can like, be whatever. And I am whatever. Whatever is my father and my muvver. And my nan. You just gotta let it out. Forever, and whatever, amen."</p>
+							</div>	
+					</div>
+					<hr>
+					<div class="row about">
+							<div class="col-sm-5">
+									<img src="img/noodle-framed.jpg" alt="Noodle">
+							</div>
+							<div class="col-sm-7">
+								<p><strong>Name:</strong></p> 
+								<p>Noodle</p>
+
+								<p><strong>Date of Birth:</strong></p>
+								<p>October 31, 1990</p>
+
+								<p><strong>Place of Birth:</strong></p>
+								<p>Osaka, Japan</p>
+
+								<p><strong>Height:</strong></p>
+								<p>5' 4''</p>
+
+								<p><strong>Quote:</strong></p>
+								<p>"Every band is destroyed by its success. Cartoon bands are no exeption"</p>
+							</div>	
+					</div>
+					<hr>
+					<div class="row about">
+							<div class="col-sm-5">
+									<img src="img/murdoc-framed.jpg" alt="2d pic">
+							</div>
+							<div class="col-sm-7">
+								<p><strong>Name:</strong></p> 
+								<p>Murdoc</p>
+
+								<p><strong>Date of Birth:</strong></p>
+								<p>June 6, 1966</p>
+
+								<p><strong>Place of Birth:</strong></p>
+								<p>Stoke-on-Trent, England</p>
+
+								<p><strong>Height:</strong></p>
+								<p>5' 8''</p>
+
+								<p><strong>Quote:</strong></p>
+								<p>"... Full frontal pelvic thrust bass shagging!"</p>
+							</div>	
+					</div>
+					<hr>
+					<div class="row about">
+							<div class="col-sm-5">
+									<img src="img/russel-framed.jpg" alt="2d pic">
+							</div>
+							<div class="col-sm-7">
+								<p><strong>Name:</strong></p> 
+								<p>Russel</p>
+
+								<p><strong>Date of Birth:</strong></p>
+								<p>June 3, 1975</p>
+
+								<p><strong>Place of Birth:</strong></p>
+								<p>Brooklyn, New York</p>
+
+								<p><strong>Height:</strong></p>
+								<p>5' 9"</p>
+
+								<p><strong>Quote:</strong></p>
+								<p>"If you keep doin this man Im ganna be jumpin you while your asleep, and i dont think either of us are ganna make it."</p>
+							</div>	
+					</div>
+			</div>
+	</div>
+</div>
+
+<footer class="container-fluid text-center bg-2">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up logo-small"></span>
+  </a>
+  <p>Gorillaz Fansite by Anom Yulian</p>
+  <small>All copyrights belong to their respective owners.</small>
+</footer>
+
+</body>
+</html>
